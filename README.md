@@ -1,12 +1,14 @@
 # RunnerRoullette
 
-TODO: Write a gem description
+Application that takes a list of runner, inserts them in to a Roulette Table and provides roulette style derivative markets.
+
+TODO: Vertical Columns, Red vs Black, Top vs Bottom, 3rds, 4trs, chip combinations.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'runner_roullette'
+    gem 'runner_roullette', git: "https://github.com/rudedoc/runner_roulette"
 
 And then execute:
 
@@ -14,11 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install runner_roullette
-
-## Usage
-
-TODO: Write usage instructions here
+    $ gem install runner_roullette, git: "https://github.com/rudedoc/runner_roulette"
 
 ## Contributing
 
