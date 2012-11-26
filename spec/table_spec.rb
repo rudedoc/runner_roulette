@@ -50,7 +50,15 @@ describe RunnerRoullette::Table do
   end
 
   its "1st vertical row should have a decimal price of 1.92" do
-    table.vertical_row_prices[0].should == 1.92
+    table.vertical_row_prices[0].should == 1.88
+  end
+
+  its "2nd vertical row should have a decimal price of 2.16" do
+    table.vertical_row_prices[1].should == 2.16
+  end
+
+  its "3nd vertical row should have a decimal price of 2.37" do
+    table.vertical_row_prices[2].should == 2.37
   end
 
 end

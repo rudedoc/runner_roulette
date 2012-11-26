@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c2d159f-ab9f-4b9e-91d3-2c06315328c4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/runner_roullette.rb" afterPath="$PROJECT_DIR$/lib/runner_roullette.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/odds_chart.txt" afterPath="$PROJECT_DIR$/odds_chart.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/odds_list.yml" afterPath="$PROJECT_DIR$/odds_list.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rou_table.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/table_spec.rb" afterPath="$PROJECT_DIR$/spec/table_spec.rb" />
     </list>
     <ignored path="runner_roullette.iws" />
@@ -25,13 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MarkdownPreviewEditor">
-            <state />
-          </provider>
+      <file leaf-file-name="table_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/table_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0047393367">
+            <state line="60" column="10" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.4512195">
               <folding />
             </state>
           </provider>
@@ -53,15 +48,16 @@
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/odds_chart.txt" />
         <option value="$PROJECT_DIR$/odds_list.yml" />
-        <option value="$PROJECT_DIR$/spec/table_spec.rb" />
         <option value="$PROJECT_DIR$/lib/runner_roullette.rb" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/spec/table_spec.rb" />
+        <option value="$PROJECT_DIR$/rou_table.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="481" />
+    <option name="x" value="19" />
+    <option name="y" value="510" />
     <option name="width" value="929" />
     <option name="height" value="504" />
   </component>
@@ -106,6 +102,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="runner_roullette" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runner_roullette" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runner_roullette" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runner_roullette" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runner_roullette" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,7 +280,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="481" width="929" height="504" extended-state="0" />
+    <frame x="19" y="510" width="929" height="504" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -338,27 +362,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/odds_list.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="10" selection-start="930" selection-end="930" vertical-scroll-proportion="2.8356164">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odds_chart.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1732" selection-end="1732" vertical-scroll-proportion="0.75342464">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/table_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="6" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.7236842">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/runner_roullette.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="29" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.68421054">
@@ -371,7 +374,35 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0047393367">
+        <state line="27" column="19" selection-start="760" selection-end="760" vertical-scroll-proportion="0.57345974">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rou_table.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="308" selection-end="308" vertical-scroll-proportion="0.5487805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odds_chart.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="18" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.5731707">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odds_list.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="10" selection-start="930" selection-end="930" vertical-scroll-proportion="4.207317">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/table_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="10" selection-start="1538" selection-end="1538" vertical-scroll-proportion="0.4512195">
           <folding />
         </state>
       </provider>
