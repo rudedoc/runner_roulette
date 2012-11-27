@@ -69,4 +69,18 @@ describe RunnerRoullette::Table do
     table.vertical_row_prices[2].should == 2.37
   end
 
+  its "number of odd runners objects should be 11" do
+    table.red_runners.count.should == 11
+  end
+
+  its "odd price should be 1.66" do
+    table.red_runners.each do |runner|
+      puts runner.inspect
+      puts "."
+    end
+    table.red_runners_price.should == 1.66
+  end
+
+
+
 end

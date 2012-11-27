@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c2d159f-ab9f-4b9e-91d3-2c06315328c4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/runner_roullette.rb" afterPath="$PROJECT_DIR$/lib/runner_roullette.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/table_spec.rb" afterPath="$PROJECT_DIR$/spec/table_spec.rb" />
     </list>
@@ -26,8 +25,10 @@
       <file leaf-file-name="table_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/table_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="33" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="80" column="42" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1354050263000" expanded="true" signature="1906:2078" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,8 +36,11 @@
       <file leaf-file-name="runner_roullette.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/runner_roullette.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="21" selection-start="1366" selection-end="1366" vertical-scroll-proportion="1.6486486">
-              <folding />
+            <state line="57" column="11" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.92788464">
+              <folding>
+                <element signature="e#61#374#0" expanded="false" />
+                <element signature="e#378#394#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,16 +63,16 @@
         <option value="$PROJECT_DIR$/odds_list.yml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/rou_table.txt" />
-        <option value="$PROJECT_DIR$/lib/runner_roullette.rb" />
         <option value="$PROJECT_DIR$/spec/table_spec.rb" />
+        <option value="$PROJECT_DIR$/lib/runner_roullette.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="y" value="338" />
-    <option name="width" value="1018" />
-    <option name="height" value="679" />
+    <option name="x" value="23" />
+    <option name="y" value="476" />
+    <option name="width" value="921" />
+    <option name="height" value="540" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -289,15 +293,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="338" width="1018" height="679" extended-state="0" />
+    <frame x="23" y="476" width="921" height="540" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1941032" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281787" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32731378" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18004115" sideWeight="0.6718213" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.6726862" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -404,15 +408,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/table_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="33" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="80" column="42" selection-start="2072" selection-end="2072" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1354050263000" expanded="true" signature="1906:2078" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/runner_roullette.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="21" selection-start="1366" selection-end="1366" vertical-scroll-proportion="1.6486486">
-          <folding />
+        <state line="57" column="11" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.92788464">
+          <folding>
+            <element signature="e#61#374#0" expanded="false" />
+            <element signature="e#378#394#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

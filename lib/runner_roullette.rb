@@ -18,16 +18,54 @@ module RunnerRoullette
   end
 
   class Bet
-    attr_accessor :id, :runner
+
   end
 
   class Table
-    attr_accessor :runners, :horizontal_rows, :vertical_rows, :odds, :evens
+    attr_accessor :runners
 
     def initialize(runners)
       @runners = runners
       @horizontal_rows = horizontal_rows
+      @horizontal_row_prices = horizontal_row_prices
       @vertical_rows = vertical_rows
+      @vertical_row_prices = vertical_row_prices
+    end
+
+    def red_runners_price
+      total_over_round = 0
+      red_runners.each do |runner|
+        total_over_round += runner.over_round
+      end
+      puts total_over_round
+      price = (100 / total_over_round) + 1
+      price.round(2)
+    end
+
+    def red_runners
+      array = []
+      @runners.each_with_index do |runner, index|
+        if index.even? then array << runner end
+      end
+      array
+    end
+
+    def black_runners
+      array = []
+      @runners.each_with_index do |runner, index|
+        if index.even? then array << runner end
+      end
+      array
+    end
+
+    # Array of Vertical Row Prices
+    def vertical_row_prices
+      row_prices(@vertical_rows)
+    end
+
+    # Array of Horizontal Row Prices
+    def horizontal_row_prices
+      row_prices(@horizontal_rows)
     end
 
     # All possible Horizontal Rows
@@ -48,16 +86,6 @@ module RunnerRoullette
         vertical_rows << vertical_row
       end
       vertical_rows
-    end
-
-    # Array of Vertical Row Prices
-    def vertical_row_prices
-      row_prices(@vertical_rows)
-    end
-
-    # Array of Horizontal Row Prices
-    def horizontal_row_prices
-      row_prices(@horizontal_rows)
     end
 
     private
