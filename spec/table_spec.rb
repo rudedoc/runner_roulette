@@ -29,7 +29,7 @@ describe RunnerRoullette::Table do
     table.horizontal_rows[0][0].price.should == "1/1"
   end
 
-  its "first item should hav an over round % of 50%" do
+  its "first item should have an over round % of 50%" do
     table.horizontal_rows[0][0].over_round.should == 50.00
   end
 
@@ -47,6 +47,14 @@ describe RunnerRoullette::Table do
 
   its "1st vertial row should have a count of 8 items" do
     table.vertical_rows[0].count.should == 8
+  end
+
+  its "2nd vertial row should have a count of 7 items" do
+    table.vertical_rows[1].count.should == 7
+  end
+
+  its "3rd vertial row should have a count of 7 items" do
+    table.vertical_rows[2].count.should == 7
   end
 
   its "1st vertical row should have a decimal price of 1.92" do

@@ -30,44 +30,49 @@ module RunnerRoullette
       @vertical_rows = vertical_rows
     end
 
-    def print
-      @rows.each do |row|
-        puts row
-      end
-    end
-
+    # All possible Horizontal Rows
     def horizontal_rows
       @runners.each_slice(3).to_a
     end
 
-    def horizontal_row_prices
-      @rows_prices = []
-      @horizontal_rows.each do |row|
-        row_over_round = 0.0
-        row.each do |item|
-          row_over_round += item.over_round
-        end
-        row_over_round = ((100.0 / row_over_round) +1).round(2)
-        @rows_prices << row_over_round
-      end
-      @rows_prices
-    end
-
-    # Needs sorting!
+    # All Possible Vertical Rows
     def vertical_rows
       vertical_rows = []
       @horizontal_rows[0].count.times do |x|
         vertical_row = []
         @horizontal_rows.count.times do |y|
-          vertical_row << @horizontal_rows[x-1][y]
+          if @horizontal_rows[y][x] != nil
+            vertical_row << @horizontal_rows[y][x]
+          end
         end
         vertical_rows << vertical_row
       end
       vertical_rows
     end
 
+    # Array of Vertical Row Prices
     def vertical_row_prices
-      raise "Not Implemented!"
+      row_prices(@vertical_rows)
+    end
+
+    # Array of Horizontal Row Prices
+    def horizontal_row_prices
+      row_prices(@horizontal_rows)
+    end
+
+    private
+
+    def row_prices(rows)
+      rows_prices = []
+      rows.each do |row|
+        row_over_round = 0.0
+        row.each do |item|
+          row_over_round += item.over_round
+        end
+        row_over_round = ((100.0 / row_over_round) +1).round(2)
+        rows_prices << row_over_round
+      end
+      rows_prices
     end
   end
 
