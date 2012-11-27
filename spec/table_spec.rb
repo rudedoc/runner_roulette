@@ -73,12 +73,12 @@ describe RunnerRoullette::Table do
     table.red_runners.count.should == 11
   end
 
-  its "odd price should be 1.66" do
-    table.red_runners.each do |runner|
-      puts runner.inspect
-      puts "."
-    end
+  its "red runners price should be 1.66" do
     table.red_runners_price.should == 1.66
+  end
+
+  its "black runners price should be 1.82" do
+    table.black_runners_price.should == 1.82
   end
 
 

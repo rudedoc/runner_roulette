@@ -37,7 +37,6 @@ module RunnerRoullette
       red_runners.each do |runner|
         total_over_round += runner.over_round
       end
-      puts total_over_round
       price = (100 / total_over_round) + 1
       price.round(2)
     end
@@ -50,10 +49,19 @@ module RunnerRoullette
       array
     end
 
+    def black_runners_price
+      total_over_round = 0
+      black_runners.each do |runner|
+        total_over_round += runner.over_round
+      end
+      price = (100 / total_over_round) + 1
+      price.round(2)
+    end
+
     def black_runners
       array = []
       @runners.each_with_index do |runner, index|
-        if index.even? then array << runner end
+        if index.odd? then array << runner end
       end
       array
     end
