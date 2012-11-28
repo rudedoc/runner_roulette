@@ -23,13 +23,17 @@ module RunnerRoullette
 
   class Table
     attr_accessor :runners
+    attr_reader :horizontal_row_prices
+    attr_reader :vertical_row_prices
+    attr_reader :red_runners_price
+    attr_reader :black_runners_price
 
     def initialize(runners)
       @runners = runners
-      @horizontal_rows = horizontal_rows
       @horizontal_row_prices = horizontal_row_prices
-      @vertical_rows = vertical_rows
       @vertical_row_prices = vertical_row_prices
+      @red_runners_price = red_runners_price
+      @black_runners_price = black_runners_price
     end
 
     def red_runners_price
@@ -68,12 +72,12 @@ module RunnerRoullette
 
     # Array of Vertical Row Prices
     def vertical_row_prices
-      row_prices(@vertical_rows)
+      row_prices(vertical_rows)
     end
 
     # Array of Horizontal Row Prices
     def horizontal_row_prices
-      row_prices(@horizontal_rows)
+      row_prices(horizontal_rows)
     end
 
     # All possible Horizontal Rows
@@ -84,11 +88,11 @@ module RunnerRoullette
     # All Possible Vertical Rows
     def vertical_rows
       vertical_rows = []
-      @horizontal_rows[0].count.times do |x|
+      horizontal_rows[0].count.times do |x|
         vertical_row = []
-        @horizontal_rows.count.times do |y|
-          if @horizontal_rows[y][x] != nil
-            vertical_row << @horizontal_rows[y][x]
+        horizontal_rows.count.times do |y|
+          if horizontal_rows[y][x] != nil
+            vertical_row << horizontal_rows[y][x]
           end
         end
         vertical_rows << vertical_row
