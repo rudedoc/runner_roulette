@@ -45,15 +45,15 @@ describe RunnerRoullette::Table do
     table.horizontal_row_prices[1].should == 2.96
   end
 
-  its "1st vertial row should have a count of 8 items" do
+  its "1st vertical row should have a count of 8 items" do
     table.vertical_rows[0].count.should == 8
   end
 
-  its "2nd vertial row should have a count of 7 items" do
+  its "2nd vertical row should have a count of 7 items" do
     table.vertical_rows[1].count.should == 7
   end
 
-  its "3rd vertial row should have a count of 7 items" do
+  its "3rd vertical row should have a count of 7 items" do
     table.vertical_rows[2].count.should == 7
   end
 

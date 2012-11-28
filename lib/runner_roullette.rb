@@ -12,7 +12,7 @@ module RunnerRoullette
     end
 
     def over_round
-      (100.00 / @price_decimal).round(2)
+      (100.00 / @price_decimal)
     end
 
   end
