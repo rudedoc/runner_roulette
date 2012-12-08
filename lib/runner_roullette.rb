@@ -36,19 +36,43 @@ module RunnerRoullette
       @black_runners_price = black_runners_price
     end
 
+
+    ### CALCULATE RED RUNNERS PRICE
+
+    # Get the array of red runners
+    def red_runners
+      # Start with empty array container
+      red_runners_array = []
+      # Loop through all the runners in the runner array and their index position in runners array
+      @runners.each_with_index do |runner, index|
+        # if the runner's index position is an even number add it to the red_runner_array
+        if index.even? then red_runners_array << runner end
+      end
+      # Return the array of red runners
+      red_runners_array
+    end
+
+    # Calculate the red runners price
     def red_runners_price
+      # Start with a total over round of 0
       total_over_round = 0
+      # Loop through the array of red runners
       red_runners.each do |runner|
+        # Add each runners over_round to the total
         total_over_round += runner.over_round
       end
+      # The price is the total_over_round divided by 100
       price = (100 / total_over_round)
+      # Round out the decimal to 2 places
       price.round(2)
     end
 
-    def red_runners
+    ## CALCULATE BLACK RUNNERS PRICES
+    # Same as Red Runners - will refactor to remove duplication
+    def black_runners
       array = []
       @runners.each_with_index do |runner, index|
-        if index.even? then array << runner end
+        if index.odd? then array << runner end
       end
       array
     end
@@ -60,14 +84,6 @@ module RunnerRoullette
       end
       price = (100 / total_over_round)
       price.round(2)
-    end
-
-    def black_runners
-      array = []
-      @runners.each_with_index do |runner, index|
-        if index.odd? then array << runner end
-      end
-      array
     end
 
     # Array of Vertical Row Prices
