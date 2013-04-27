@@ -59,7 +59,7 @@ module RunnerRoullette
       runners.each do |runner|
         total_over_round += runner.over_round
       end
-      price = (100 / total_over_round)
+      price = (100 / total_over_round) + 1
       price.round(2)
     end
 
@@ -97,8 +97,8 @@ module RunnerRoullette
         row.each do |item|
           row_over_round += item.over_round
         end
-        row_over_round = ((100.0 / row_over_round)).round(2)
-        rows_prices << row_over_round
+        row_over_round = ((100.0 / row_over_round)) + 1
+        rows_prices << row_over_round.round(2)
       end
       rows_prices
     end

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c2d159f-ab9f-4b9e-91d3-2c06315328c4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runner_roullette.iml" afterPath="$PROJECT_DIR$/.idea/runner_roullette.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/runner_roullette.rb" afterPath="$PROJECT_DIR$/lib/runner_roullette.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/table_spec.rb" afterPath="$PROJECT_DIR$/spec/table_spec.rb" />
     </list>
     <ignored path="runner_roullette.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +25,16 @@
       <file leaf-file-name="runner_roullette.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/runner_roullette.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="0" selection-start="1790" selection-end="1790" vertical-scroll-proportion="1.1705686">
+            <state line="91" column="50" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.8862876">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/table_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="47" selection-start="2752" selection-end="2752" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,6 +111,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="runner_roulette" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runner_roullette" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runner_roulette" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,14 +426,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/table_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="95" selection-start="688" selection-end="688" vertical-scroll-proportion="0.44117647">
+        <state line="97" column="47" selection-start="2752" selection-end="2752" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/runner_roullette.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="0" selection-start="1790" selection-end="1790" vertical-scroll-proportion="1.1705686">
+        <state line="91" column="50" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.8862876">
           <folding />
         </state>
       </provider>
