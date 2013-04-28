@@ -11,40 +11,18 @@ module RunnerRoullette
     end
 
     def over_round
-      (100.00 / @price_decimal)
+      (100.00 / price_decimal)
     end
-
-  end
-
-  class Bet
-
   end
 
   class Table
     attr_accessor :runners
-    attr_reader :horizontal_row_prices, :vertical_row_prices
 
     def initialize(runners)
       @runners = runners
-      @horizontal_row_prices = horizontal_row_prices
-      @vertical_row_prices = vertical_row_prices
     end
 
-    def red_runners
-      array = []
-      runners.each_with_index do |runner, index|
-        if index.even? then array << runner end
-      end
-      array
-    end
-
-    def black_runners
-      array = []
-      runners.each_with_index do |runner, index|
-        if index.odd? then array << runner end
-      end
-      array
-    end
+    public
 
     def red_runners_price
       line_price(red_runners)
@@ -52,15 +30,6 @@ module RunnerRoullette
 
     def black_runners_price
       line_price(black_runners)
-    end
-
-    def line_price(runners)
-      total_over_round = 0
-      runners.each do |runner|
-        total_over_round += runner.over_round
-      end
-      price = (100 / total_over_round) + 1
-      price.round(2)
     end
 
     def vertical_row_prices
@@ -76,6 +45,7 @@ module RunnerRoullette
       runners.each_slice(3).to_a
     end
 
+    # TODO: Code Smell - Refactor Complex/Long Method
     def columns
       columns = []
       rows[0].count.times do |x|
@@ -90,18 +60,36 @@ module RunnerRoullette
       columns
     end
 
-    def row_prices(rows)
-      rows_prices = []
-      rows.each do |row|
-        row_over_round = 0.0
-        row.each do |item|
-          row_over_round += item.over_round
-        end
-        row_over_round = ((100.0 / row_over_round)) + 1
-        rows_prices << row_over_round.round(2)
+    protected
+
+    # TODO: remove Duplication
+    def red_runners
+      array = []
+      runners.each_with_index do |runner, index|
+        array << runner if index.even?
       end
-      rows_prices
+      array
     end
+
+    # TODO: remove Duplication
+    def black_runners
+      array = []
+      runners.each_with_index do |runner, index|
+        array << runner if index.odd?
+      end
+      array
+    end
+
+    def row_prices(rows)
+      rows.collect { |row| line_price(row) }
+    end
+
+    def line_price(runners)
+      total_over_round = runners.inject(0) { |sum, runner| sum + runner.over_round }
+      price = (100 / total_over_round) + 1
+      price.round(2)
+    end
+
   end
 
 end
