@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/runner_roullette/version', __FILE__)
+require File.expand_path('../lib/runner_roulette/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["rudedoc"]
   gem.email         = ["finlay.mark@gmail.com"]
-  gem.description   = %q{Takes a list of runners and creates a set of derviative prices combining the original runners in a roulette style.}
+  gem.description   = %q{Takes a list of runners and creates a set of derivative prices combining the original runners in a roulette style.}
   gem.summary       = %q{Given an Array of Runner Objects (which have prices) it will return a Table with extra markets similar those found on a roulette table.}
   gem.homepage      = "http://github.com/rudedoc/runner_roulette.git"
 

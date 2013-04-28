@@ -22,7 +22,22 @@ module RunnerRoulette
       @runners = runners
     end
 
-    public
+    # TODO smell: remove Duplication
+    def red_runners
+      array = []
+      runners.each_with_index do |runner, index|
+        array << runner if index.even?
+      end
+      array
+    end
+
+    def black_runners
+      array = []
+      runners.each_with_index do |runner, index|
+        array << runner if index.odd?
+      end
+      array
+    end
 
     def red_runners_price
       line_price(red_runners)
@@ -34,7 +49,6 @@ module RunnerRoulette
 
     def vertical_row_prices
       row_prices(columns)
-      # each column - gen a price and store it in array
     end
 
     def horizontal_row_prices
@@ -58,25 +72,6 @@ module RunnerRoulette
         columns << column
       end
       columns
-    end
-
-    protected
-
-    # TODO smell: remove Duplication
-    def red_runners
-      array = []
-      runners.each_with_index do |runner, index|
-        array << runner if index.even?
-      end
-      array
-    end
-
-    def black_runners
-      array = []
-      runners.each_with_index do |runner, index|
-        array << runner if index.odd?
-      end
-      array
     end
 
     def row_prices(rows)
