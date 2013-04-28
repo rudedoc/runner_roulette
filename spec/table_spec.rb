@@ -1,12 +1,9 @@
 require 'spec_helper'
 
 
-describe RunnerRoullette::Table do
+describe RunnerRoulette::Table do
   before(:all) do
     ## CREATE 22 RUNNERS WITH PRICES FROM 1/1 to to 22/1
-
-    # Red Runners - 1.66
-    # Black Runners - 1.88
 
     # |1. Runner "1/1"      | 2. Runner "2/1"    | 3. Runner "3/1"    | Row 1 - 1.92
     # |4. Runner "4/1"      | 5. Runner "5/1"    | 6. Runner "6/1"    | Row 2 - 2.96
@@ -18,15 +15,16 @@ describe RunnerRoullette::Table do
     # |22. Runner "22/1"    |
     # | Column 1 - 1.88     |   Column 2 - 2.16  |   Column 3 - 2.37  |
 
+    # Red Runners   - 1.66
+    # Black Runners - 1.88
+
     runners = []
     1.upto(22) do |runner|
-      runners << RunnerRoullette::Runner.new("horse#{runner}", "#{runner}/1", runner+1)
+      runners << RunnerRoulette::Runner.new("horse#{runner}", "#{runner}/1", runner+1)
     end
 
-    @table = RunnerRoullette::Table.new(runners)
+    @table = RunnerRoulette::Table.new(runners)
   end
-
-
 
   it "should have 22 runners" do
     @table.runners.count.should == 22
@@ -93,7 +91,4 @@ describe RunnerRoullette::Table do
   its "black runners price should be 1.82" do
     @table.black_runners_price.should == 1.82
   end
-
-
-
 end

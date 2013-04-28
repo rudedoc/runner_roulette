@@ -1,6 +1,6 @@
-require "runner_roullette/version"
+require "runner_roulette/version"
 
-module RunnerRoullette
+module RunnerRoulette
   class Runner
     attr_accessor :name, :price, :price_decimal
 
@@ -45,7 +45,7 @@ module RunnerRoullette
       runners.each_slice(3).to_a
     end
 
-    # TODO: Code Smell - Refactor Complex/Long Method
+    # TODO smell: Refactor Complex/Long Method
     def columns
       columns = []
       rows[0].count.times do |x|
@@ -62,7 +62,7 @@ module RunnerRoullette
 
     protected
 
-    # TODO: remove Duplication
+    # TODO smell: remove Duplication
     def red_runners
       array = []
       runners.each_with_index do |runner, index|
@@ -71,7 +71,6 @@ module RunnerRoullette
       array
     end
 
-    # TODO: remove Duplication
     def black_runners
       array = []
       runners.each_with_index do |runner, index|
