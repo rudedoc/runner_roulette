@@ -83,7 +83,5 @@ module RunnerRoulette
       price = (100 / total_over_round) + 1
       price.round(2)
     end
-
   end
-
 end
